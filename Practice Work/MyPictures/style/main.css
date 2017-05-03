@@ -1,0 +1,28 @@
+/*sample css file*/
+*{
+	/*outline: thin dotted red;*/
+	background-color: green;
+}
+
+#headerDiv{
+	outline: thick black;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#pictureTable{
+	margin: auto auto;
+}
+
+table{
+	margin: auto auto;
+}
+img{
+	width: 200px;
+	height: 300px;
+	padding: 20px;
+}
+
+#footer{
+	text-align: center;
+}

@@ -1,0 +1,33 @@
+/*sample css file*/
+/**{
+	outline: thin dotted red;
+}*/
+
+.packerDarft{
+	height: 400px;
+	width: 350px;
+	border: thin solid blue;
+}
+
+.headerDiv{
+	text-align: center;
+	padding-top: 20px
+	padding-bottom: 20px;
+}
+
+table{
+	margin-top: 50px;
+	margin: auto auto;
+	width: 350px;
+}
+
+.headerBox{
+	width: 200px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+a{
+	color: gold;
+}

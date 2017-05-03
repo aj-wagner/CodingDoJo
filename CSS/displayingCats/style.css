@@ -1,0 +1,54 @@
+/*CSS settings for display blocks*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /*border: solid thin black;*/
+}
+
+#wrapper {
+    width: 675px;
+    background-color: tan;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#header {
+    height: 60px;
+}
+
+.headerImg{
+    height: 60px;
+    display: inline-block;
+    background-color: white;
+    vertical-align: bottom;
+}
+
+h1{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#main_content {
+    padding-top: 20px;
+}
+
+.dataRow{
+    display: inline-block;
+}
+
+.whiteBackImg{
+    height: 115px;
+    width: 115px;
+    padding: 5px;
+    border: 3px solid black;
+    background-color: #5c5cf3;
+}
+
+.pinkBackImg{
+    height: 125px;
+    width: 125px;
+    background-color: #cc3953;
+    border: 3px solid black;
+}
