@@ -4,6 +4,7 @@
 <head>
     <title>JavaScript Basics</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
 </head>
 
 <body>
@@ -13,47 +14,41 @@
         </div>
         <div id="mainBody">
 	        <div id="navRight">
-	        	<a href="">Home</a>
-	        	<div class="secLevelNav">
-		        	<ul>
-		        		<li><a href="">JavaScript Overview</a></li>
-							<div class="secLevelNav">
-			        			<ul>
-			        				<li><a href="">Variable Declaration</a></li>
-			        				<li><a href="">Variable Assignment</a></li>
-			        				<li><a href="">Data Type</a></li>
-			        				<li><a href="">Conditionals</a></li>
-			        				<li><a href="">Loops</a></li>
-			        				<li><a href="">Function</a></li>
-			        			</ul>
-							</div>
-		        		<li><a href="">Projects</a></li>
-		        		<li><a href="">Assignments</a></li>
-		        		<li><a href="">Quiz</a></li>
-		        	</ul>	        		
-	        	</div>
-
-			</ul>
+		        <ul id="navList"> 
+		       		<li class="firLevel"><a href="">Home</a></li>
+		       		<li class="secLevel"><a href="">JavaScript Overview</a></li>
+			       	<li class="thirdLevel"><a href="">Variable Declaration</a></li>
+			       	<li class="thirdLevel"><a href="">Variable Assignment</a></li>
+		       		<li class="thirdLevel"><a href="">Data Type</a></li>
+		       		<li class="thirdLevel"><a href="">Conditionals</a></li>
+		       		<li class="thirdLevel"><a href="">Loops</a></li>
+		       		<li class="thirdLevel"><a href="">Function</a></li>
+		        	<li class="secLevel"><a href="">Projects</a></li>
+		        	<li class="secLevel"><a href="">Assignments</a></li>
+		        	<li class="secLevel"><a href="">Quiz</a></li>
+		        </ul>	        		
 	        </div>
 	        <div id=mainContent>
 	        	<h2>JavaScript Basics</h2><br>
 	        	<p>
 	        		JavaScript is a cross-platofm, object-oriented scripting language.  JavaScript is extremelly popular for a variety of reason.  It is a small and lightweight language allowing maxismum flexibility for developer to it in a bunch of different directioins.  JavaScript lievs inside a host of environments (a web broswer or Node server), it can be connected to the objects of these enviornments to provide programmatic control over them.
+	        	</p>
 	        		<div id="mainList">
 	        		<ul>
-	        			<li><a href="">Variable Declaration</a> JavaScript variables are containers for storing data values - imagine a cup you fill with coffee, the cup holds the coffee, a variable holds a value.  All JavaScript variables must be identified with unique names.  these unique names are called identifiers.  <span class="exaText">var x;</span></li><br>
+	        			<li class="mainButList"><a href="">Variable Declaration</a> JavaScript variables are containers for storing data values - imagine a cup you fill with coffee, the cup holds the coffee, a variable holds a value.  All JavaScript variables must be identified with unique names.  these unique names are called identifiers.  <span class="exaText">var x;</span></li>
 
-	        			<li><a href="">Variable Assignment</a> Assignment operators assing values to JavaScript variables - our cup can now have coffee poured in it, giving our variable a value to hold.  the = assignment operator assigns a vaule to a variable. <span class="exaText">var x = 10;</span></li><br>
+	        			<li class="mainButList"><a href="">Variable Assignment</a> Assignment operators assing values to JavaScript variables - our cup can now have coffee poured in it, giving our variable a value to hold.  the = assignment operator assigns a vaule to a variable. <span class="exaText">var x = 10;</span></li>
 
-	        			<li><a href="">Data Type</a> Datat types are an important concept; to be able to operate on variables you need to know the dat ype.  There are six data types that are JavaScipt primitives: Boolean - <span class="exaText">true</span> or <span class="exaText">false;</span> null - <span class="exaText">null</span> aka nothing; Number - <span class="exaText">42</span> or <span class="exaText">3.14159;</span> String - <span class="exaText">"Coding Dojo Rocks!;</span> Array - <span class="exaText">[1, 'Coding', 2, 'Dojo'];</span> and Object - <span class="exaText">{first_name: 'Jane', last_name: 'Doe'}"</span></li><br>
-	        			
-	        			<li><a href="">Conditionals</a>WFAKE TYPE types are an important concept; to be able to operate on variables you need to know the dat ype.  There are six data types that are JavaScipt primitives: Boolean - true or false; null - null aka nothing; Number - 42 or 3.14159; String - "Coding Dojo Rocks!; Array - [1, 'Coding', 2, 'Dojo']: and Object - {first_name: 'Jane', last_name: 'Doe'}"</li><br>
-	       				<li><a href="">Loops</a>FAKE TYPE types are an important concept; to be able to operate on variables you need to know the dat ype.  There are six data types that are JavaScipt primitives: Boolean - true or false; null - null aka </li><br>
+	        			<li class="mainButList"><a href="">Data Type</a> Datat types are an important concept; to be able to operate on variables you need to know the dat ype.  There are six data types that are JavaScipt primitives: Boolean - <span class="exaText">true</span> or <span class="exaText">false;</span> null - <span class="exaText">null</span> aka nothing; Number - <span class="exaText">42</span> or <span class="exaText">3.14159;</span> String - <span class="exaText">"Coding Dojo Rocks!;</span> Array - <span class="exaText">[1, 'Coding', 2, 'Dojo'];</span> and Object - <span class="exaText">{first_name: 'Jane', last_name: 'Doe'}"</span></li>
 
-	       				<li><a href="">Function</a>FAKE TYPE = types are an important concept; to be able to operate on variables you need to know the dat ype.  There are six data types that are JavaScipt primitives: Boolean - true or false; null - null aka nothing; Number - 42 or 3.14159; String - "Coding Dojo Rocks!; Array - [1, 'Coding', 2, 'Dojo']: and Object - {first_name: 'Jane', last_name: 'Doe'}"</li><br>
+	        			<li class="mainButList"><a href="">Conditionals</a>WFAKE TYPE types are an important concept; to be able to operate on variables you need to know the dat ype.  There are six data types that are JavaScipt primitives: Boolean - true or false; null - null aka nothing; Number - 42 or 3.14159; String - "Coding Dojo Rocks!; Array - [1, 'Coding', 2, 'Dojo']: and Object - {first_name: 'Jane', last_name: 'Doe'}"</li>
+
+	       				<li class="mainButList"><a href="">Loops</a>FAKE TYPE types are an important concept; to be able to operate on variables you need to know the dat ype.  There are six data types that are JavaScipt primitives: Boolean - true or false; null - null aka </li>
+
+	       				<li class="mainButList"><a href="">Function</a>FAKE TYPE = types are an important concept; to be able to operate on variables you need to know the dat ype.  There are six data types that are JavaScipt primitives: Boolean - true or false; null - null aka nothing; Number - 42 or 3.14159; String - "Coding Dojo Rocks!; Array - [1, 'Coding', 2, 'Dojo']: and Object - {first_name: 'Jane', last_name: 'Doe'}"</li>
 	        		</ul>
 	        		</div>
-	        	</p>      	
+	        	      	
 	        </div>
         </div>
         <div id="footer">

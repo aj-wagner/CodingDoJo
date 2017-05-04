@@ -11,6 +11,22 @@ a {
     color: #12d0cc;
 }
 
+.firLevel{
+    margin-left: 10px;
+    list-style-type: none;   
+}
+
+.secLevel{
+    margin-left: 30px;
+    color: silver;
+}
+
+.thirdLevel{
+    margin-left: 50px;  
+    list-style-type: circle;
+    color: silver; 
+}
+
 .exaText{
     color: #8383de;
 }
@@ -52,12 +68,13 @@ a {
 }
 
 #mainContent {
-    width: 985px;
+    width: 995px;
     border-radius: 20px;
     display: inline-block;
     vertical-align: top;
     background-color: #0b0d19;
     padding-top: 25px;
+    padding-bottom: 15px;
     padding-left: 15px;
     color: silver;
 }
@@ -67,10 +84,9 @@ a {
     margin-top: 10px;
 } 
 
-.secLevelNav{
-    margin-left: 20px;    
+.mainButList{
+    margin-top: 15px;
 }
-
 #footer{
     height: 40px;
     margin-top: 15px;
