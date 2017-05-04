@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+        var HOUR = 12;
+        var MINUTE = 10;
+        var PERIOD = "AM";
+        var hourPrint;
+        var timeRel;
+        var morEvn;
+
+        if (MINUTE < 30) {
+            timeRel = "just after";
+            hourPrint = HOUR;
+        } else {
+            timeRel = "almost";
+
+            if (HOUR < 10) {
+                hourPrint = HOUR + 1;
+            } else {
+                if (HOUR == 12) {
+                    HOUR = 1;
+                } else {
+                    HOUR = 12;
+                }
+                if (PERIOD = "AM") {
+                    PERIOD = "PM";
+                } else {
+                    PERIOD = "AM";
+                }
+            }
+        }
+
+        if (PERIOD == "AM") {
+            morEvn = "in the morning";
+        } else {
+            morEvn = "in the evening";
+        }
+
+        console.log(`It's ${timeRel} ${HOUR} ${morEvn}`);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

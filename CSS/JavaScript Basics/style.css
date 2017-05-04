@@ -1,0 +1,82 @@
+/*CSS settings for JavaScript Basics*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+/*    border: solid thin black;*/
+}
+
+a {
+    color: #12d0cc;
+}
+
+.exaText{
+    color: #8383de;
+}
+
+#wrapper {
+    width: 1270px;
+    background-color: #2a2aaf;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#header {
+    height: 55px;
+    background-color: #c13939;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+#headerText{
+    color: silver;
+}
+
+#mainBody {
+    margin-top: 20px;
+    vertical-align: top;
+}
+
+#navRight{
+    border-radius: 20px;
+    background-color: #338e6d;
+    width: 200px;
+    height: 225px;
+    margin-right: 20px; 
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#mainContent {
+    width: 985px;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #0b0d19;
+    padding-top: 25px;
+    padding-left: 15px;
+    color: silver;
+}
+
+#mainList{
+    margin-left: 20px;
+    margin-top: 10px;
+} 
+
+.secLevelNav{
+    margin-left: 20px;    
+}
+
+#footer{
+    height: 40px;
+    margin-top: 15px;
+    background-color: #403e3e;
+    padding-top: 15px;
+    padding-left: 20px;
+    border-radius: 20px;
+    color: silver;
+}

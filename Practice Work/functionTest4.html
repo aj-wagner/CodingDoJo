@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+        function printRange(num1, num2) {
+
+            //input validation for 2 numbers
+            if ((typeof num1 != "number") || (typeof num2 != "number")) {
+                console.log(`invalid input`);
+                return;
+            }
+
+            //add num1 & num2 and save in num3
+            var num3 = num1 + num2;
+
+            //convert number to string
+            num3 = num3.toString();
+
+            //return 1st char of string
+            return num3[0];
+        }
+
+        console.log(printRange(5, 1));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
