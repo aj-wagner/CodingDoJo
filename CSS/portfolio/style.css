@@ -1,0 +1,150 @@
+/*CSS settings for JavaScript Basics*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+    outline: 1px dotted red;
+}
+
+#wrapper {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #f8f8f8;
+
+}
+
+#header {
+
+}
+
+#headerLeft{
+    display: inline-block;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 45%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+#headerRight{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}
+
+#bodySection{
+    background-color: #5d4851;
+    padding: 20px;
+
+}
+
+#bodyTopSection{
+/*    height: 260px;*/
+}
+
+#topLeft{
+    display: inline-block;
+    background-color: #c0c0c0;
+    padding: 5px;
+
+}
+
+#topLeft img{
+    width: 450px;
+}
+
+#topRight{
+    display: inline-block;
+    height: 309px;
+    width: 462px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.lowerCenterTextBox{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#aboutText{
+    height: 79%;
+}
+
+#boxHeaderAbout{
+    padding: 10px;
+    color: #ffffff;
+    background-color: #878593;
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: top;
+    width: 442px;
+
+    background: radial-gradient(#878593, #b4b4b8);    
+}
+
+.boxHeader{
+    padding: 10px;
+    color: #ffffff;
+    background-color: #878593;
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: top;
+    width: 278px;
+
+    background: radial-gradient(#878593, #b4b4b8);
+}
+
+.boxBody{
+    padding: 10px;
+    height: 79%;
+    display: inline-block;
+    background: linear-gradient(to right, #fefefe, #daccd9);
+}
+
+.smallPicHolder img{
+    width: 298px;
+    display: inline-block;
+}
+
+.lowerBoxText{
+    height: 175px;
+    padding: 10px;
+    background: linear-gradient(to right, #fefefe, #daccd9);
+    text-align:justify;
+}
+#bodyLowerSec{
+    height: 560px
+}
+
+#lowerLeft{
+    height: 540px;
+    width: 297px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+#lowerCenter{
+    height: 540px;
+    width: 297px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20.5px;
+    margin-top: 20px;
+
+}
+#lowerRight{
+    height: 540px;
+    width: 297px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20.5px;
+    margin-top: 20px;
+}
+
+#footer{
+    height: 60px;
+
+}
