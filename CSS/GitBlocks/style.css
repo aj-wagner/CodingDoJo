@@ -1,0 +1,79 @@
+/*CSS settings for JavaScript Basics*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial;
+
+    /*outline: 1px dotted red;*/
+}
+
+#wrapper {
+    width: 900px;
+    height: 760px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dddfd4;
+}
+
+.headerFooter {
+    height: 80px;
+    background-color: #3fb0ac;
+}
+
+#bodySection{
+    background-color: #fae596;
+    height: 560px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 17px;
+    padding-top: 17px;
+}
+
+.gitBoxLeftSide{
+    background-color: #173f43;
+    height: 540px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+#rightBodySection{
+    display: inline-block;
+    vertical-align: top;
+    width: 635px;
+}
+
+.gitBoxTopThree{
+    background-color: #173f43;
+    height: 160px;
+    width: 178px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+.gitBoxMiddleBox{
+    background-color: #173f43;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 30px;
+    height: 160px;
+    width: 285px;
+}
+
+
+.gitBoxBottom{
+    background-color: #173f43;
+    margin-right: 30px;
+    margin-top: 30px;
+    height: 160px;
+    width: 600px;
+    vertical-align: top;
+    display: inline-block;
+
+}
