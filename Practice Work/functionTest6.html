@@ -55,6 +55,27 @@ for(var i = 0; i < string.length; i++){
 //strObj{..., e:12}
 
 
+function onlyOnce(str){
+	var obj={};
+	var newStr="";
+
+	for(var i=0; i<str.length; i++){
+		if(!obj[str[i]]){
+			obj[str[i]] = 1;
+		} else{
+			obj[str[i]]++;
+		}
+	}
+
+	for(var i=0; i<str.length; i++){
+		if(obj[str[i]] == 1){
+			newStr+=str[i];
+		}
+	}
+
+	return newStr;
+}
+
     </script>
 </head>
 
