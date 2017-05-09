@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family: arial;
 
     outline: 1px dotted red;
 }
@@ -127,7 +128,7 @@
 
 #leftHeaderText{
     height: 320px;
-    width: 701px;
+    width: 700px;
     display: inline-block;
 }
 
@@ -160,5 +161,38 @@
 #footerSection{
     height: 100px;
     width: 970px;
+    background-color: #336ea0;
+    color: white;
 }
+
+#footerLinks{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#link1{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+#link2{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+#link3{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+#footerLinks{
+    font-size: medium;
+}
+#copyright{
+    text-align: center;
+    margin-top: 12px;
+    font-size: x-small;
 }

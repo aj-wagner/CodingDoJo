@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+    
+
+//insert at array
+function insertAt(arr, ind, val){
+ 	for(var i=arr.length; i<ind; i--){
+ 		arr[i+1] = arr[i];
+ 	}
+
+ 	arr[ind] = val;
+ 	return arr;
+}
+//console.log(insertAt([1,2,3,4,5,6], 3, 9));
+
+ //find val in array (first index)
+function findValInArrary(arr, val){
+ 	for(var i=0; i<arr.length; i++){
+ 		if(arr[i] == val){
+ 			return i;
+ 		}
+ 	}
+ 	return -1;
+}
+//console.log(findValInArrary([1,2,5,3,2,3], 7));
+//console.log(findValInArrary([1,2,5,3,2,3], 5));
+
+
+// delete in array 
+function deleteInArray(arr, val){
+	var foundAtInd = findValInArrary(arr, val);
+
+ 	for(var i=foundAtInd; i<arr.length-1; i++){
+ 	 	arr[i] = arr[i+1];
+ 	}
+
+	arr.pop();
+	return arr;
+}
+//console.log(deleteInArray([1, 2, 3, 4], 4));
+
+// reverse 
+function reverseArr(arr){
+	var newArr=[];
+
+	for(var i=0; i<arr.length;i++){
+		newArr[(arr.length-1-i)] = arr[i];
+	}
+	return newArr;
+}
+
+console.log(reverseArr([1, 2, 3, 4]));
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

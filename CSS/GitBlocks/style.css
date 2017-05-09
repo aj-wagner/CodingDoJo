@@ -4,13 +4,13 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    font-family: Arial;
+    font-family: monospace;
 
-    /*outline: 1px dotted red;*/
+/*    outline: 1px dotted red;*/
 }
 
 #wrapper {
-    width: 900px;
+    width: 950px;
     height: 760px;
     padding: 20px;
     margin-left: auto;
@@ -30,12 +30,13 @@
     margin-bottom: 10px;
     padding-left: 17px;
     padding-top: 17px;
+    color: white;
 }
 
 .gitBoxLeftSide{
     background-color: #173f43;
     height: 540px;
-    width: 200px;
+    width: 240px;
     display: inline-block;
     vertical-align: top;
     margin-right: 30px;
@@ -44,13 +45,13 @@
 #rightBodySection{
     display: inline-block;
     vertical-align: top;
-    width: 635px;
+    width: 655px;
 }
 
 .gitBoxTopThree{
     background-color: #173f43;
     height: 160px;
-    width: 178px;
+    width: 183px;
     display: inline-block;
     vertical-align: top;
     margin-right: 30px;
@@ -63,17 +64,74 @@
     margin-right: 30px;
     margin-top: 30px;
     height: 160px;
-    width: 285px;
+    width: 291px;
 }
-
 
 .gitBoxBottom{
     background-color: #173f43;
     margin-right: 30px;
     margin-top: 30px;
     height: 160px;
-    width: 600px;
+    width: 618px;
     vertical-align: top;
     display: inline-block;
+}
 
+#leftHeader{
+    display: inline-block;
+    width: 270px;
+}
+
+#rightHeader{
+    display: inline-block;
+    width: 550px;
+    padding-top: 34px;
+    padding-left: 69px;
+    font-size: small;
+    vertical-align: top;
+}
+.headerLinks{
+    vertical-align: top;
+    color: white;
+    padding-right: 5px
+}
+#headTitle{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 26px;
+    font-weight: 100;
+}
+#ghicon{
+    height: 52px;
+    margin-left: 10px;
+    margin-top: 17px;
+}
+
+#footer{
+    padding-top: 33px;
+    padding-left: 240px;
+}
+
+h2{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 7px;
+    font-weight: 300;
+}
+
+h3{
+    margin-bottom: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+p{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px
+}
+
+.greenTxt{
+    color: #50cdbf;
 }

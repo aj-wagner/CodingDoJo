@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+
+var obj = {
+name: 'hi',
+age:18
+}
+//console.log(obj);
+// what will happen?
+//snytax error
+
+
+var mycat1 = {name:'poopie', color:'brown'}
+mycat2 = mycat1
+mycat2.name = 'frank'
+//console.log(mycat1.name)
+//what will happen?
+//console.log('frank')
+
+
+console.log= function(params){
+	console.dir(params)
+	//.dir is similar to .log
+}
+//console.log('j')
+//what will happen?
+//overwrite log with a function that takes 1 param and dir it out
+//console.log('j')
+
+
+var myNewthing = {name: 'thing'}
+myNewthing.talk = function(par){
+	console.log(this.name + par)
+	return 5
+}
+
+var x =  myNewthing.talk('par')
+//console.log(x)
+//what will happen?
+//consolelog 'thingpar'
+//x is set to 5 in memory
+
+
+var string = 'helloEveryone';
+strObj = {}
+for(var i = 0; i < string.length; i++){
+	strObj[string[i]]= i
+}
+//console.log(strObj['e'])
+//what will happen?
+//strObj{..., e:12}
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
