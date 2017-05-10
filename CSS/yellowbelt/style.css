@@ -55,11 +55,13 @@
     vertical-align: top;
 }
 
-#serachTextBox{
+#searchTextBox{
     display: inline-block;
     height: 35px;
-    width: 155px;
+    width: 180px;
     margin-right: -4px;
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
 }
 
 #clickedLink{
@@ -93,7 +95,8 @@
 
 #browseStoreBtn{
     background-color: #4981a6;
-    margin-left: 30px;
+    box-shadow: 3px 3px 3px #65889f;
+    margin-left: 26px;
     height: 45px;
     border-radius: 9px;
     color: white;
@@ -121,7 +124,7 @@
 
 #searchBox{
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 120px;
     padding-top: 10px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -165,6 +168,7 @@
 #leftBodyHeader h2{
     font-weight: 100;
     margin-left: 30px;
+    margin-right: 9px;
     margin-top: 20px;
     color: gray;
 }
@@ -258,18 +262,22 @@
 
 #bodyLink1{
     margin-top: 0px;
+    box-shadow: 2px 2px 2px #92b5d1;
 }
 
 #bodyLink2{
     margin-top: 31px;
+    box-shadow: 2px 2px 2px #92b5d1;
 }
 
 #bodyLink3{
     margin-top: 23px;
+    box-shadow: 2px 2px 2px #92b5d1;
 }
 
 #bodyLink4{
     margin-top: 21px;
+    box-shadow: 2px 2px 2px #92b5d1;
 }
 
 #bodyFooter{
@@ -292,8 +300,9 @@
     margin-bottom: 28px;
 }
 
-.tableDashLineRow td{
+.tableDashLineRow{
     border-bottom: 1px solid gray;
+    width: 115px;
 }
 
 .tableHeaderRow{
