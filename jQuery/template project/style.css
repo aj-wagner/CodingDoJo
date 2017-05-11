@@ -1,0 +1,9 @@
+/*CSS settings for new project*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial;
+/*    outline: 1px dotted red;*/
+}

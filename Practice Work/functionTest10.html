@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+
+        function sll(){
+            this.head = null;
+        }
+
+        function node(val){
+            this.value = val;
+            this.next = null;
+        }
+
+        var mySLL = new sll();
+        var node1 = new node(100);
+        var node2 = new node(200);
+        var node3 = new node(300);
+
+        console.log(mySLL);
+        console.log(node1);
+        console.log(node2);
+        console.log(node3);
+
+        sll.prototype.addBack() = function(){
+         
+            var newNode = new node(val);
+            if(!this.head){
+                this.head = newNode;
+            }else{
+                var current = this.head;
+
+                while(current.next){
+                    current = current.next;
+                }
+
+                current.next = newNode;
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

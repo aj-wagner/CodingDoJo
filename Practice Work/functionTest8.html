@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+
+		function fancyArr(arr, symbol, reversed){
+			if(reversed){
+				for(var i=arr.length-1; i>=0; i--){			
+					console.log(`${i} ${symbol} ${arr[i]}`);
+				}
+			}else{
+				for(var i=0; i<arr.length; i++){
+					console.log(`${i} ${symbol} ${arr[i]}`);
+				}
+			}
+
+			return;
+		}
+
+		fancyArr([1,2,3,4], '=>', false);
+		fancyArr([1,2,3,4], '=>', true);
+
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

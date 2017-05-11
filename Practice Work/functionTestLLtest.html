@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+
+		function dll(){
+			this.head=null;
+		}
+
+		function node(val){
+			this.value=val;
+			this.next=null;
+			this.back=null;
+		}
+
+		var myDll = new dll();
+		console.log(myDll);
+
+		var node1 = new node(100);
+		var node2 = new node(200);
+		var node3 = new node(300);
+
+		// console.log(node1);
+		// console.log(node2);
+		// console.log(node3);
+
+		dll.prototype.addNewEndNode = function(val){
+			var newNodeToAdd = new node(val);
+
+			if(!this.head){
+				this.head = newNodeToAdd;
+				newNodeToAdd.back = this;
+			} else {
+				var runnerNode = this.head;
+
+				while(runnerNode.next){
+					runnerNode = runnerNode.next;
+				}
+
+				runnerNode.next = newNodeToAdd;
+				newNodeToAdd.back = runnerNode;
+			}
+		}
+
+		myDll.addNewEndNode(1000);
+		console.log(myDll);
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

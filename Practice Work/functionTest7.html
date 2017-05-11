@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+
+
+		function randomChance(qters, tapOut){
+			var random;
+			var winnings;
+
+			if(qters>0){
+				qters--;
+
+				//random number from 1 to 100
+				random = 1+(Math.trunc(100*Math.random()));
+
+				//1 is the winner
+				if(random == 1){
+					winnings = 50+(Math.floor(50*Math.random()));
+					qters += winnings;
+					console.log(`Awesome, you won ${winnings} quarters.  Your total is ${qters}`);
+				}
+				
+				if(qters >= tapOut){
+					console.log(`Awesome, you're walking away with ${qters}`);
+				} 
+			}
+			
+			return qters;
+		}
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
