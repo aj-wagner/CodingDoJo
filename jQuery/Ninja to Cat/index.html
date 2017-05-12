@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery - Ninja to Cat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var HTMLstr="";
+        var pictureType;
+        var randomNum;
+
+        for(var i=0; i<5; i++){
+            randomNum = Math.floor((Math.random() * 2) + 1);
+
+            if(randomNum == 1){
+               pictureType = "cat";
+            }else{
+                pictureType = "ninja";
+            }
+
+            HTMLstr += `<img id="${i}${pictureType}" src="./images/${pictureType}${i}.png" alt="${pictureType}_picture">`;
+        }
+
+
+    	$(document).ready(function(){
+            $('#bodySection').append(HTMLstr);
+
+            $('img').click(function(){
+                //get the picture number (cat or ninja doesn't matter)
+                var picNum = $(this)[0].id[0];
+
+                // current picture type (c == cats; n == ninja)
+                var curPixType = $(this)[0].id[1];
+
+                //current picture is of a cat
+                if( curPixType == "c" ){
+
+                    //switch from cat to ninja but keep the picture number the same
+                    $(this)[0].src = `./images/ninja${picNum}.png`
+                    $(this)[0].id = `${picNum}n`
+                } //current picture is of a ninja
+                else{
+                    //switch from ninja to cat but keep the picture number the same
+                    //also update the id for knowing when to switch back
+                    $(this)[0].src = `./images/cat${picNum}.png`
+                    $(this)[0].id = `${picNum}c`
+                }           
+            });
+
+    	});
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="bodySection">
+         
+        </div>
+ 	</div>
+</body>
+
+</html>

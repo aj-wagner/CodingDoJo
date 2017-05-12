@@ -1,0 +1,36 @@
+/*CSS settings for new project*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial;
+   	outline: 1px dotted red;
+}
+
+
+#wrapper{
+	width: 815px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerDiv{
+	background-color: gray;
+	height: 100px;
+}
+
+.imgDiv{
+	height: 125px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.imgDiv{
+	height: 140px;
+	width: 200px;
+}
+#footerDiv{
+	background-color: gray;
+	height: 50px;
+}

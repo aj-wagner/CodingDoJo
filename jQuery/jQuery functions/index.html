@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+
+          $('[id=catSlidePic]').hide();
+
+            $('[id=addClassBtn]').click(function(){
+                $('[id=redParag]').css('color', 'red');
+            });
+
+            $('[id=slideToggleBtn]').click(function(){
+                $('[id=catSlidePic]').show();
+            });
+
+            $('[id=appendBtn]').click(function(){
+                $('[id=appPara]').append("<p>appeded para</p>");
+            });
+
+    	});
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+    	<div id="headerDiv"></div>
+        <div id="addClassDiv">
+            <h1>AddClass</h1>
+            <div>
+                <input id="addClassBtn" class="buttons" type="button" value="AddClass">
+                <p id="redParag" class="paragraph"> Click the button to add class 'red' to this paragraph</p>
+            </div>
+        </div>
+        <div id="slideToggleDiv">
+            <h1>Slidetoggle</h1>
+            <div>
+                <input class="buttons" type="submit" id="slideToggleBtn" value="Slidetoggle">
+                <p class="paragraph"> Click the button to add class 'red' to this paragraph</p>
+                <img id="catSlidePic" src="./images/cat.jpeg" alt="cat pic">
+            </div>
+        </div>
+        <div id="appendDiv">
+            <h1>Append</h1>
+            <div>
+                <input class="buttons" type="submit" id="appendBtn" value="Append">
+                <p class="paragraph" id="appPara"> Click the button to add class 'red' to this paragraph</p>
+            </div>
+        </div>
+        <div id="footerDiv"></div>
+ 	</div>
+</body>
+
+</html>

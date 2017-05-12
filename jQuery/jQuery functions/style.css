@@ -1,0 +1,52 @@
+/*CSS settings for new project*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial;
+/*    outline: 1px dotted red;*/
+}
+
+
+#wrapper{
+	width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraph{
+	display: inline-block;
+}
+
+.buttons{
+	display: inline-block;
+}
+
+#catSlidePic{
+	
+}
+#headerDiv{
+	background-color: gray;
+	height: 100px;
+}
+
+#addClassDiv{
+	height: 200px;
+	border-bottom: 1px solid gray;
+}
+
+#slideToggleDiv{
+	height: 200px;
+	border-bottom: 1px solid gray;
+}
+
+#appendDiv{
+	height: 200px;
+	border-bottom: 1px solid gray;
+}
+
+#footerDiv{
+	background-color: gray;
+	height: 50px;
+}

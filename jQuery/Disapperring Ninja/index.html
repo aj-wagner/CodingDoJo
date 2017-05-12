@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery - Disappearing Ninja</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+
+    	$(document).ready(function(){
+
+            $('img').click(function(){
+                $(this).hide();
+            });
+
+            $('#restoreBtn').click(function(){
+                $('img').show();
+            });
+    	});
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+    	<div id="headerDiv">
+         <h3>jQuery - assignment 1</h3>   
+        </div>
+        <div id="bodySection">
+            <div>
+                <div class="imgDiv" id="imgDiv1">
+                    <img src="./images/ninja.png" alt="cat pic">
+                </div>
+                <div class="imgDiv" id="imgDiv2">
+                    <img src="./images/ninja.png" alt="cat pic">
+                </div>
+                <div class="imgDiv" id="imgDiv3">
+                    <img src="./images/ninja.png" alt="cat pic">
+                </div>
+                <div class="imgDiv" id="imgDiv4">
+                    <img src="./images/ninja.png" alt="cat pic">
+                </div>
+            </div>
+            <div>
+                 <div class="imgDiv" id="imgDiv5">
+                    <img src="./images/ninja.png" alt="cat pic">
+                </div>
+                <div class="imgDiv" id="imgDiv6">
+                    <img src="./images/ninja.png" alt="cat pic">
+                </div>
+                <div class="imgDiv" id="imgDiv7">
+                    <img src="./images/ninja.png" alt="cat pic">
+                </div>
+                <div class="imgDiv" id="imgDiv8">
+                    <img src="./images/ninja.png" alt="cat pic">
+                </div>               
+            </div>
+        <div>
+            
+        </div>
+            <div>
+                <button id="restoreBtn">Restore</button> 
+            </div>
+        </div>
+        <div id="footerDiv"></div>
+ 	</div>
+</body>
+
+</html>
