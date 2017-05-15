@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+    	
+    	function Print1To255(){
+    		for(var i=1; i<256;i++){
+    			console.log(i);
+    		}
+    	}
+//Print1To255();
+	
+// Print
+//  Ints and Sum 0-255
+		function PrintIntsAndSum0To255(){
+			var sum=0;
+
+			for(var i=0; i<256;i++){
+				sum += i;
+    			console.log(i+" "+sum);
+    		}
+		}
+		//PrintIntsAndSum0To255();
+
+// Print integers from 0 to 255, and with each integer
+//  print the sum so far. 
+
+// Find
+//  and Print Max
+function PrintMaxOfArray(arr){
+	var maxVale=arr[0];
+
+	for(var i=1; i<arr.length; i++){
+		if(maxVale<arr[i]){
+			maxVale=arr[i];
+		}
+	}
+	console.log(maxVale);
+}
+
+//PrintMaxOfArray([1,4,2]);
+// Given an array, find and print its largest element.
+
+// Array
+//  with Odds
+function ReturnOddsArray1To255(){
+	var arr=[];
+	for(var i=1; i<=255; i+=2){
+		arr.push(i);
+	}
+	return arr;
+}
+//console.log(ReturnOddsArray1To255());
+
+// Create an array with all the odd integers between
+//  1 and 255 (inclusive).  
+
+
+// Greater
+//  than Y
+function ReturnArrayCountGreaterThanY(arr, y){
+	var count=0;
+	for(var i=0; i<arr.length; i++){
+		if(arr[i]>y){
+			count++;
+			console.log(arr[i]);
+		}
+	}
+	console.log(count);
+	return;
+}
+
+//ReturnArrayCountGreaterThanY([2, 3, 5, 6, 1] , 4);
+// Given an array and a value Y, count and print the
+//  number of array values greater than Y. 
+
+
+// Max,
+//  Min, Average
+function PrintMaxMinAverageArrayVals(arr){
+	var sum=0;
+	var min=arr[0];
+	var max=arr[0];
+
+	for(var i=0; i<arr.length; i++){
+		sum+=arr[i];
+		if(arr[i]>max){
+			max=arr[i];
+		}
+		if(arr[i]<min){
+			min=arr[i];
+		}
+	}
+	console.log(`min value: ${min} max value: ${max} Average value: ${sum/arr.length}`);
+	return;
+}
+
+//PrintMaxMinAverageArrayVals([2, 3, 8, 3, 4, 6]);
+// Given an array, print the max, min and average values
+//  for that array.
+
+
+// Swap
+//  String For Array Negative Values
+function SwapStringForArrayNegativeVals(arr){
+	for(var i=0; i<arr.length; i++){
+		if(arr[i]<0){
+			arr[i]='Dojo';
+		}
+	}
+	return arr;
+}
+//console.log(SwapStringForArrayNegativeVals([3, -1, 0,-2]));
+// Given an array of numbers, replace any negative
+//  values with the string 'Dojo'.
+// Print
+//  Odds 1-255
+function PrintOdds1To255(){
+	for(var i=1;i<=255;i+=2){
+		console.log(i);
+	}
+}
+//PrintOdds1To255();
+// Print all odd integers from 1 to 255.
+
+
+// Iterate
+//  and Print Array
+function PrintArrayVals(arr){
+	for(var i=0; i<arr.length;i++){
+		console.log(arr[i]);
+	}
+}
+// Iterate through a given array, printing each value.
+//PrintArrayVals();
+
+
+// Get
+//  and Print Average
+function PrintAverageOfArray(arr){
+	var sum=0;
+	for(var i=0; i<arr.length;i++){
+		sum+=arr[i];
+	}
+	return sum/arr.length;
+}
+// Analyze an array’s values and print the average.
+//console.log(PrintAverageOfArray([3,4,3,2]));
+
+// Square
+//  the Values
+function SquareArrayVals(arr){
+	for(var i=0; i<arr.length; i++){
+		arr[i]*=arr[i];
+	}
+	return arr;
+}
+// Square each value in a given array, returning that
+//  same array with changed values. 
+//console.log(SquareArrayVals([2, 3, 4, 5]));
+
+// Zero
+//  Out Negative Numbers
+function ZeroOutArrayNegativeVals(arr){
+	for(var i=0; i<arr.length;i++){
+		if(arr[i]<0){
+			arr[i]=0;
+		}
+	}
+}
+// Return the given array, after setting any negative
+//  values to zero. 
+
+
+// Shift
+//  Array Values
+function ShiftArrayValsLeft(arr){
+	for(var i=0; i<arr.length;i++){
+		arr[i]=arr[i+1]
+	}
+	arr[arr.length-1]=0;
+	return arr;
+}
+
+//console.log(ShiftArrayValsLeft([1,2,4,5,6]));
+// Given an array, move all values forward (to the left) by one index, dropping the first value and leaving a 0 in the last index location
+
+
+
+	function arrInsert(arr, ind, val){
+		
+		for(var i=arr.length; i>ind;i--){
+			arr[i]=arr[i-1];
+		}
+		
+		arr[ind] = val;
+
+		return arr;
+	}
+
+//console.log(arrInsert([1,2,3], 1, 7));
+
+	function arrDelete(arr, ind){
+
+		for(var i=ind; i<arr.length;i++){
+			arr[i]=arr[i+1];
+		}
+		arr.length = arr.length-1;
+		return arr;
+	}
+
+//console.log(arrDelete([1,2,3], 1));
+
+	function arrFind(arr, val){
+		for(var i=0; i<arr.length;i++){
+			if(arr[i]==val){
+				return i;
+			}
+		}
+		return -1;
+	}
+//console.log(arrFind([1,4,2,6], 4));
+
+	function arrReverse(arr){
+		var retArr=[];
+		for(var i=0; i<arr.length;i++){
+			retArr[i] = arr[arr.length-1-i];
+		}
+		return retArr;
+	}
+//console.log(arrReverse([1,2,3,4]));
+
+function Sll(){
+	this.head=null;
+}
+
+function SllNode(val){
+	this.data=val;
+	this.next=null;
+}
+
+	Sll.prototype.insertNewEndNode = function(val){
+		var tempNode = new SllNode(val);
+		var runnerNode;
+
+		if(!this.head){
+			this.head = tempNode;
+		}
+		else{
+			runnerNode = this.head;
+
+			while(runnerNode.next){
+				runnerNode=runnerNode.next;
+			}
+
+			runnerNode.next=tempNode;
+		}
+		return;
+	}
+
+	Sll.prototype.insertEndNode = function(node){
+		var runnerNode;
+
+		if(!this.head){
+			this.head=node;
+		}
+		else{
+			runnerNode=this.head;
+
+			while(runnerNode.next){
+				runnerNode=runnerNode.next;
+			}
+			runnerNode.next=node;
+		}
+		
+		return;
+	}
+	
+	Sll.prototype.insertAtInd = function(ind, node){
+		var runnerNode;
+		var counter=1;
+
+		if(ind == 0){
+			node.next=this.head;
+			this.head=node;
+		}
+		else{
+			runnerNode=this.head;
+
+			while(counter<ind){
+				counter++;
+				runnerNode=runnerNode.next;
+				
+				if(!runnerNode){
+					console.log(`index for ll is out of bound`);
+					return false;
+				}
+			}
+			node.next=runnerNode.next;
+			runnerNode.next=node;
+			
+		}
+		return true;
+	}
+
+	Sll.prototype.deleteAtInd = function(ind){
+		var runnerNode;
+		var counter=1;
+
+		runnerNode=this.head;
+
+		if(ind==0){
+			this.head=runnerNode.next;
+		}else{
+			while(counter<ind){
+				counter++;
+				runnerNode=runnerNode.next;
+
+				if(!runnerNode.next){
+					console.log(`index for ll is out of bound`);
+					return false;
+				}
+			}	
+			runnerNode.next=runnerNode.next.next;
+		}
+	}
+
+	Sll.prototype.findIndOfVal = function(val){
+		var runnerNode = this.head;
+		var ind=0;
+
+		while(runnerNode){
+			if(runnerNode.data == val){
+				return ind;
+			}
+			ind++;
+			runnerNode=runnerNode.next;
+		}
+		return -1;
+	}
+
+	Sll.prototype.reverseLL = function(){
+		var retSll = new Sll();
+		var arr=[];
+		var runnerNode = this.head;
+
+		while(runnerNode){
+			arr.push(runnerNode.data);
+			runnerNode=runnerNode.next;
+		}
+		for(var i=arr.length-1; i>=0;i--){
+			retSll.insertNewEndNode(arr[i]);	
+		}
+		return retSll;
+	}
+
+var mySll = new Sll();
+var n1 = new SllNode(2);
+var n2 = new SllNode(4);
+var n3 = new SllNode(3);
+
+mySll.insertNewEndNode(1);
+mySll.insertEndNode(n1);
+mySll.insertEndNode(n2);
+mySll.insertAtInd(2, n3),
+//mySll.deleteAtInd(3);
+
+console.log(mySll);
+console.log(n1);
+n1 = null;
+console.log(n1);
+console.log(mySll);
+
+
+
+//console.log(mySll.findIndOfVal(4));
+//console.log(mySll.findIndOfVal(5));
+//console.log(mySll);
+//console.log(mySll.reverseLL());
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
