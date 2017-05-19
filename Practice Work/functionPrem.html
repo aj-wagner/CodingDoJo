@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+
+    function perm(word){
+    	word=word.split('');
+    	results=[];
+
+    	function mutate(chars, next=[]){
+    		if(chars.lenght == 0){
+    			results.push(next.toString())
+    		}
+    		for(var i=0; i<chars.lenght; i++){
+    			chars.push(chars.shift());
+    			next.push(chars[0]);
+    			mutate(chars.slice(1), next);
+    			next.pop();
+    		}
+    		mutate(word);
+    		return results;
+    	}
+    }
+
+    const name = {name: 'AJ', age:35};
+    console.log(name);
+    name.name="new name"
+
+    console.log(name);
+
+    // var str='ABC';
+
+    // console.log(perm(str));
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

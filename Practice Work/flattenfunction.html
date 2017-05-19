@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>funciton tester</title>
+    <script type="text/javascript">
+
+		function flatten(arr, newArr=[]){
+			for(var i=0; i<arr.length; i++){
+
+				console.log(Array.isArray( arr[i] ));
+
+				if(Array.isArray(arr[i])){
+					// console.log
+					flatten(arr[i], newArr);
+				}else{
+					newArr.push(arr[i]);
+				}
+			}
+			return newArr;
+		}
+
+var tempArr = [[1], 2, [20, [2]], 20];
+
+console.log(flatten( tempArr ));
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
