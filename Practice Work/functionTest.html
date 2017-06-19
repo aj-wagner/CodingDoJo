@@ -6,6 +6,56 @@
     <script type="text/javascript">
 
 
+    const a = [1, 2, 3, 4];
+
+    //syntax of the forEach
+    //a.forEach( function(){} );
+
+	// a.forEach(function(current,index){
+	//     a[index] += 1;
+	// });
+
+
+	//map function
+	// const newArr = a.map( function(value){
+	// 	return value;
+	// })
+
+	//filter
+	// const filteredArr = a.filter( function(value){
+	// 	return (value%2 == 0);
+	// })
+
+	// console.log(filteredArr);
+
+	Array.prototype.map = function(callBack){
+		var returnArr=[];
+
+		for(var i=0; i<this.length; i++){
+			returnArr[i] = callBack(this[i]);
+		}
+		return returnArr;
+	}
+
+
+	Array.prototype.filter = function(callBack){
+	 	var newArr=[];
+
+		this.forEach(function(current){
+			if(callBack(current)){
+				newArr.push(current);
+			}
+		});
+		return newArr;
+	}
+
+	var tempArr = a.filter(
+		function(val){
+			return (val % 2 === 0);
+		});
+
+	console.log(tempArr);
+
     </script>
 </head>
 

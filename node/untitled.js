@@ -50,7 +50,7 @@ app.listen(port, function(){
 })
 
 6. create routes.js file within the /server/config.  within the routes.js file include:
-module.export = function(app){
+module.exports = function(app){
 	app.get('/', function(req, res){
 		
 	})

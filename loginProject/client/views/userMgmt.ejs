@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Management</title>
+	<link rel="stylesheet" type="text/css" href="../css/userMgmt.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript">
+
+
+    	$(document).ready(function(){
+
+            $('.userDiv').click(function(){
+
+            	var index = $(this).attr('id');
+            	var userName = $(this).children().find('.userName').val();
+            	// var userCampus
+            	// var userAge
+            	// var userPhone
+            	console.log(userName);
+         
+          
+            });
+
+    	});
+
+    </script>
+
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="addUserDiv">
+			<h2>Add New User</h2>
+
+			<form id="addUserForm" method="post" action="/addUser/submit">
+				<label>
+					Name: <input type="text" name="name">
+				</label><br>
+				<label>
+					Campus: <select name="campus">
+					  <option value=""></option>
+					  <option value="Downtown">Downtown</option>
+					  <option value="Franklin">Franklin</option>
+					</select>
+				</label><br>
+				<label>
+					Age: <input type="text" name="age">
+				</label><br>
+				<label>
+					Phone Number: <input type="text" name="phone">
+				</label><br>	
+				<input type="submit" value="Add User"><br>
+			</form>
+		</div>
+		<div id="updateUserDiv">
+			<h2>Update User</h2>
+
+			<form id="updateUserForm" method="post" action="/updateUser/submit">
+				<label>
+					Name: <input type="text" name="name">
+				</label><br>
+				<label>
+					Campus: <select name="campus">
+					  <option value=""></option>
+					  <option value="Downtown">Downtown</option>
+					  <option value="Franklin">Franklin</option>
+					</select>
+				</label><br>
+				<label>
+					Age: <input type="text" name="age">
+				</label><br>
+				<label>
+					Phone Number: <input type="text" name="phone">
+				</label><br>	
+				<input type="submit" value="Update User"><br>
+			</form>
+		</div>
+
+		<h2>Current Users</h2><br>
+
+		<% for (var i in users) { %>
+			<div class="userDiv" id="<%=users[i]._id%>">
+				<h3><div class="leftLabels">Name:</div><div id="userName" class="rightContent"><%= users[i].name %></div></h3>
+				<p><div class="leftLabels">campus:</div><div id="userCampus" class="rightContent"><%= users[i].campus %></div></p>
+				<p><div class="leftLabels">age:</div><div id="userAge" class="rightContent"><%= users[i].age %></div></p>
+				<p><div class="leftLabels">phone:</div><div id="userPhone" class="rightContent"><%= users[i].phone %></div></p>
+		    </div>
+		    <br>
+		<% } %>
+
+	</div>
+</body>
+</html>
